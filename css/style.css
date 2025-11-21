@@ -1,1 +1,10 @@
 /* Denna fil skall innehålla din CSS kod */
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "hd hd"
+    "mn mn"
+    "dv1 dv2"
+    "dv3 dv4"
+    "ft ft";
+}
