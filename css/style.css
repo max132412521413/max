@@ -22,7 +22,9 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #nav {
@@ -30,7 +32,9 @@ grid-area: nv;
     background-color: #d9c8b0;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius: px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     color: black;
@@ -98,4 +102,134 @@ grid-area: nv;
     height: 550px;
     gap: 10px;
     padding: 40px;
+}
+
+#wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "ma2 ma2"
+    "sc2 sc2"
+    "ft2 ft2";
+    background-image: url("../img/photo-1741518359305-bd534b595680.avif");
+    background-size: cover;
+}
+
+#main2 {
+    grid-area: ma2;
+    background-color: #7b8c78;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+#main2 h2 {
+    display: flex;
+    align-items: center;
+    line-height: 500%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#section2 {
+    grid-area: sc2;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FDFCFA;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+#section2 img {
+    width: 500px;
+    height: 550px;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    
+}
+
+#footer2 {
+    grid-area: ft2;
+    background-color: #d9c8b0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+#footer2 li {
+    display: flex;
+    align-items: center;
+}
+
+#footer2 h2 {
+    padding: 10px;
+}
+
+#footer2 h3 {
+    padding-top: 5px;
+}
+
+#wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hd hd"
+    "nv nv"
+    "mn3 mn3"
+    "sc3 sc3";
+
+}
+
+#main3 {
+    grid-area: mn3;
+    display: flex;
+    justify-content: center;
+    background-color: #7b8c78;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+#section3 {
+    grid-area: sc3;
+    display: flex;
+    background-color: #d9c8b0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+#main3 #img3 {
+    width: 500px;
+    height: 550px;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+#section3 #img3 {
+    width: 500px;
+    height: 550px;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 50px;
 }
