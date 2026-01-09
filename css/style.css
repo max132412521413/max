@@ -1,4 +1,10 @@
 /* Denna fil skall innehålla din CSS kod */
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+
+}
 #wrapper1{
     display: grid;
     grid-template-areas: 
@@ -12,53 +18,60 @@
     background-image: url("../img/istockphoto-1410766826-612x612.jpg");
 }
 
-#header {
+.header {
     grid-area: hd;
     background-color: #d9c8b0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-top: 10px;
     border-radius: px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-#nav {
-grid-area: nv;
-    background-color: #d9c8b0;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.nav {
+grid-area: nv;
+    background-color: #d9c8b0;
     border-radius: px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     color: black;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+
     
 }
 
-#nav a {
+.nav a {
     color: black;
     text-decoration: none;
 }
 
-#header img {
+.header img {
     width: 150px;
     height: 140px;
     border-radius: 50px;
     gap: 10px;
 }
 
-#header h1 { 
+.header h1 { 
     text-align: center;
     font-size: 10rem;
 }
 
-#main1 {
+.main1 {
     grid-area: mn;
     background-color: #7b8c78;
     display: flex;
@@ -69,14 +82,14 @@ grid-area: nv;
 
 }
 
-#main1 img {
+.main1 img {
     width: 650px;
     height: 500px;
     border-radius: 15px;
     gap: 10px;
 }
 
-#section1 {
+.section1 {
     grid-area: sc;
     background-image: url("../img/photo-1471879832106.avif");
     background-size: 100% 100%;
@@ -85,7 +98,7 @@ grid-area: nv;
 }
 
 
-#footer1 {
+.footer1 {
     grid-area: ft;
     display: flex;
     justify-content: center;
@@ -97,7 +110,7 @@ grid-area: nv;
 
 }
 
-#footer1 img { 
+.footer1 img { 
     width: 500px;
     height: 550px;
     gap: 10px;
@@ -116,20 +129,23 @@ grid-area: nv;
     "ft2 ft2";
     background-image: url("../img/photo-1741518359305-bd534b595680.avif");
     background-size: cover;
+    align-content: center;
 }
 
-#main2 {
+.main2 {
     grid-area: ma2;
     background-color: #7b8c78;
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 10px;
+    
 
 }
 
-#main2 h2 {
+.main2 h2 {
     display: flex;
     align-items: center;
     line-height: 500%;
@@ -137,7 +153,7 @@ grid-area: nv;
     padding-right: 10px;
 }
 
-#section2 {
+.section2 {
     grid-area: sc2;
     display: flex;
     justify-content: space-evenly;
@@ -148,7 +164,7 @@ grid-area: nv;
 
 }
 
-#section2 img {
+.section2 img {
     width: 500px;
     height: 550px;
     gap: 10px;
@@ -157,7 +173,7 @@ grid-area: nv;
     
 }
 
-#footer2 {
+.footer2 {
     grid-area: ft2;
     background-color: #d9c8b0;
     padding: 15px;
@@ -172,16 +188,16 @@ grid-area: nv;
 
 }
 
-#footer2 li {
+.footer2 li {
     display: flex;
     align-items: center;
 }
 
-#footer2 h2 {
+.footer2 h2 {
     padding: 10px;
 }
 
-#footer2 h3 {
+.footer2 h3 {
     padding-top: 5px;
 }
 
@@ -194,31 +210,36 @@ grid-area: nv;
     "nv nv"
     "mn3 mn3"
     "sc3 sc3";
+    width: 100%;
 
 }
 
-#main3 {
+.main3 {
     grid-area: mn3;
     display: flex;
     justify-content: center;
     background-color: #7b8c78;
     padding: 15px;
-    margin: 10px;
     border-radius: 10px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 
-#section3 {
+.section3 {
     grid-area: sc3;
     display: flex;
     background-color: #d9c8b0;
     padding: 15px;
-    margin: 10px;
     border-radius: 10px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
 
 }
 
-#main3 #img3 {
+.main3 .img3 {
+    grid-area: img3;
     width: 500px;
     height: 550px;
     gap: 10px;
@@ -226,10 +247,34 @@ grid-area: nv;
     border-radius: 50px;
 }
 
-#section3 #img3 {
+.main3 h3 {
+    grid-area: h3;
+}
+
+.section3 .div3 {
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: 
+   "img3 h3"
+   "img3 h3"
+   "img3 h3";
+   justify-content: space-between;
+}
+
+.section3 .img3 {
+    grid-area: img3;
     width: 500px;
     height: 550px;
     gap: 10px;
     padding: 40px;
     border-radius: 50px;
 }
+
+.section3 .div3 {
+    grid-row: auto;
+    align-content: center;
+    text-align: center;
+   
+}
+
